@@ -81,4 +81,11 @@ Fan Trick Photography (Chapter 2) Code Snippets
          (document.getElementById("membook").checked === false) ? totalCost -= 250 : totalCost += 250;
          document.getElementById("estimate").textContent = "$" + totalCost;
       }
+      
+      // adds/subtracts cost of reproduction rights from total cost   ref pg 121 step 5
+    function toggleRights() {
+       (document.getElementById("reprodrights").checked === false) ? totalCost -= 1250 : totalCost += 1250;
+       document.getElementById("estimate").innerHTML = "$" + totalCost;
+    }
+
 ------------------------------------------------------------------------------------------------
